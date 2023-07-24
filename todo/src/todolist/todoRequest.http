@@ -1,0 +1,42 @@
+### Create TODO 
+POST http://localhost:3030/todolist
+Content-Type: application/json
+
+{
+    "text": "Starting Unit testing before 11 AM Today",
+    "date": "20/7/2023",
+    "priority": 1
+}
+
+
+### Get TODO by Id
+GET http://localhost:3030/todolist/5
+
+
+
+### Get TODO by UserID
+GET http://localhost:3030/todolist?userIdentity=5
+
+
+
+### Update TODO 
+PATCH http://localhost:3030/todolist?id=1
+Content-Type: application/json
+
+{
+    "text": "This is trial to Update todoId-1 and userId-5",
+    "priority": 3
+}
+
+### Update IsChecked TODO 
+PATCH  http://localhost:3030/todolist/3
+Content-Type: application/json
+
+{
+    "isChecked": true
+}
+
+
+
+### Delete Todo
+DELETE http://localhost:3030/todolist/1

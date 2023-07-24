@@ -1,0 +1,61 @@
+### User Sign Up
+Post http://localhost:3030/auth/signUp
+Content-Type: application/json
+
+{
+    "name": "Prirav",
+    "email": "priyaravipatel@gmail.com",
+    "password": "12345678"
+}
+
+
+### User Sign In
+Post http://localhost:3030/auth/signIn
+Content-Type: application/json
+
+{
+    "email": "priyapatel@gmail.com",
+    "password": "1234"
+}
+
+
+### User Sign Out
+Post http://localhost:3030/auth/signOut
+
+
+### Logged In User
+Get http://localhost:3030/auth/whoami
+
+
+
+### Update User
+Patch http://localhost:3030/auth/4
+Content-Type: application/json
+
+{
+    "name": "Ravi",
+    "email": "ravipatel@gmail.com"
+}
+
+
+### Delete User
+Delete http://localhost:3030/auth/3
+
+
+
+
+
+
+
+
+
+
+
+
+
+### Find User By Email
+Get http://localhost:3030/auth/vedpatel@gmail.com
+
+
+### Find User By Email-Query
+Get http://localhost:3030/auth?email=vedpatel@gmail.com
