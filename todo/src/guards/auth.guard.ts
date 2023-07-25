@@ -7,7 +7,6 @@ export class AuthGuard implements CanActivate {
         const request = context.switchToHttp().getRequest();
         const user = request.session.userId;
         return request.session.userId;
-       
     }
 
 }

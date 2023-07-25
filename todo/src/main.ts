@@ -10,6 +10,7 @@ async function bootstrap() {
   app.use(cookieSession({
     keys: ["asdf"]
   }))
+  // For Using GUARD
   app.useGlobalPipes(
     new ValidationPipe({
       whitelist: true
